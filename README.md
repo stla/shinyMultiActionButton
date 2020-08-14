@@ -1,3 +1,3 @@
 # shinyMultiActionButton
 
-![](https://raw.githubusercontent.com/stla/shinyMultiActionButton/master/inst/shinyMultiActionButton.gif)
+![](https://raw.githubusercontent.com/stla/shinyMultiActionButton/master/inst/screenshots/shinyMultiActionButton.gif)
