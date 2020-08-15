@@ -36,26 +36,30 @@ ui <- fluidPage(
   tags$fieldset(
     tags$legend("Buttons states"),
     verbatimTextOutput("buttons")
-  )
+  ),
 
 
-
-
-  #   HTML('
-  #   <div class="multi-action">
-  #     <button class="action-button rotate-minus bg-red fg-white"
-  #             onclick="$(this).toggleClass(\'active\')"
-  #             id = "btn">
-  #         <span class="icon"><span class="mif-plus"></span></span>
-  #     </button>
-  #     <ul class="actions drop-right">
-  #         <li class="bg-blue"><a href="#" onclick="Shiny.setInputValue(\'blue\', \'xxx\')"><span class="mif-user-plus"></span></a></li>
-  #         <li class="bg-teal"><a href="#" id="teal" class="action-button"><span class="mif-library"></span></a></li>
-  #         <li class="bg-pink"><a href="#" id="alarm" class="action-button"><span class="mif-alarm"></span></a></li>
-  #         <li class="bg-orange"><a href="#"><span class="mif-lock"></span></a></li>
-  #     </ul>
-  # </div>
-  #   ')
+  HTML('
+    <div class="multi-action">
+      <button class="action-button rotate-minus bg-red fg-white"
+              onclick="$(this).toggleClass(\'active\')"
+              id = "btn">
+          <span class="icon"><span class="mif-plus"></span></span>
+      </button>
+      <ul class="actions drop-right">
+          <li class="bg-blue"><a href="#"><span class="mif-user-plus"></span></a></li>
+          <li class="bg-teal"><a href="#" class="action-button"><span class="mif-library"></span></a></li>
+          <li class="bg-pink"><a href="#" class="action-button"><span class="mif-alarm"></span></a></li>
+          <li class="bg-orange multi-action action-button">
+                  <span class="icon"><span class="mif-plus"></span></span>
+                <ul class="actions drop-bottom">
+                  <li class="bg-blue"><a href="#"><span class="mif-user-plus"></span></a></li>
+                  <li class="bg-blue"><a href="#"><span class="mif-power"></span></a></li>
+                </ul>
+          </li>
+      </ul>
+  </div>
+    ')
 
 )
 
