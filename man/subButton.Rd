@@ -10,7 +10,8 @@ subButton(
   fg = NULL,
   icon = NULL,
   iconSize = "3x",
-  tooltip = NULL
+  tooltip = NULL,
+  onclick = NULL
 )
 }
 \arguments{
@@ -26,6 +27,8 @@ subButton(
 \code{"4x"} or \code{"5x"}}
 
 \item{tooltip}{character string to show as tooltip}
+
+\item{onclick}{\code{onclick} attribute}
 }
 \description{
 Creates a sub-button for usage in \code{\link{multiActionButton}}
